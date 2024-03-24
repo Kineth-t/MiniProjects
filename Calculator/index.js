@@ -22,11 +22,11 @@ function calculateDisplay(){
         let expression = displayScreen.value;
 
         // Replace 'x' with '*' for multiplication
-        expression = expression.replace(/x/g, '*');
-        expression = expression.replace(/÷/g, '/');
+        expression = expression.replaceAll('x', '*');
+        expression = expression.replaceAll('÷', '/');
 
         // Replace '%' with '/100' for percentage calculation
-        expression = expression.replace(/%/g, '/100');
+        expression = expression.replaceAll('%', '/100');
 
         // Evaluate the expression
         const result = eval(expression);
