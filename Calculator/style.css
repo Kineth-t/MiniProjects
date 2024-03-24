@@ -14,11 +14,11 @@ body{
 }
 
 #displayScreen{
-    width: 100%;
+    width: calc(100% - 15px);
     border: none;
     background-color: black;
     color: white;
-    font-size: 4em;
+    font-size: 4.5em;
     text-align: right;
 }
 
